@@ -1,4 +1,8 @@
-<button class= "btn" [disabled]="!allowNewServer">Add Server</button>
+<button class= "btn" [disabled]="false" (click)="onCreateServer()">Add Server</button>
 <p [innerText]="allowNewServer"></p>
+<p> {{serverCreationStatus}}</p>
+
+<input type="text" [(ngModel)]= "username" >
+{{username}}
 <app-server></app-server>
 <app-server></app-server>
