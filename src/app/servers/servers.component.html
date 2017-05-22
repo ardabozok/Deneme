@@ -4,5 +4,9 @@
 
 <input type="text" [(ngModel)]= "username" >
 {{username}}
+
+<br>
+<button (click)="showMessageClick()" > Mesaj</button>
+<p *ngIf="showMessage">Message</p>
 <app-server></app-server>
 <app-server></app-server>

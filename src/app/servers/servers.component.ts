@@ -26,7 +26,13 @@ export class ServersComponent implements OnInit {
   onCreateServer(){
       this.serverCreationStatus = 'Server succesfully created!';
   }
-
+  
+  
+  showMessage = false;
+  showMessageClick(){
+      this.showMessage = !this.showMessage;
+  }
+  
   ngOnInit() {
       
      
